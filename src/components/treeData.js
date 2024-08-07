@@ -1,57 +1,57 @@
 const treeData = [
     {
-        label: 'Item 1',
+        label: 'This PC',
         children: [
             {
-                label: 'Sub Item 1.1',
+                label: 'Documents',
                 children: [
-                    { label: 'Sub Sub Item 1.1.1' },
-                    { label: 'Sub Sub Item 1.1.2' },
-                    { label: 'Sub Sub Item 1.1.3' }
+                    { label: 'Reports' },
+                    { label: 'Projects' },
+                    { label: 'Resumes' }
                 ]
             },
             {
-                label: 'Sub Item 1.2',
+                label: 'Desktop',
                 children: [
-                    { label: 'Sub Sub Item 1.2.1' },
-                    { label: 'Sub Sub Item 1.2.2' }
+                    { label: 'Screenshots' },
+                    { label: 'Work Files' }
                 ]
             },
-            { label: 'Sub Item 1.3' }
+            { label: 'Downloads' }
         ]
     },
     {
-        label: 'Item 2',
+        label: 'Music',
         children: [
-            { label: 'Sub Item 2.1' },
+            { label: 'Albums' },
             {
-                label: 'Sub Item 2.2',
+                label: 'Playlists',
                 children: [
-                    { label: 'Sub Sub Item 2.2.1' },
+                    { label: 'Rock' },
                     {
-                        label: 'Sub Sub Item 2.2.2',
+                        label: 'Jazz',
                         children: [
-                            { label: 'Sub Sub Sub Item 2.2.2.1' },
-                            { label: 'Sub Sub Sub Item 2.2.2.2' }
+                            { label: 'Smooth Jazz' },
+                            { label: 'Classic Jazz' }
                         ]
                     }
                 ]
             },
-            { label: 'Sub Item 2.3' }
+            { label: 'Podcasts' }
         ]
     },
     {
-        label: 'Item 3',
+        label: 'Pictures',
         children: [
-            { label: 'Sub Item 3.1' },
+            { label: 'Vacation' },
             {
-                label: 'Sub Item 3.2',
+                label: 'Events',
                 children: [
-                    { label: 'Sub Sub Item 3.2.1' },
-                    { label: 'Sub Sub Item 3.2.2' }
+                    { label: 'Birthday' },
+                    { label: 'Wedding' }
                 ]
             },
-            { label: 'Sub Item 3.3' }
+            { label: 'Family' }
         ]
     }
 ];
