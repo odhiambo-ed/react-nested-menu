@@ -1,10 +1,11 @@
 import './App.css'
+import FolderList from './components/FolderList'
 
 function App() {
 
   return (
     <>
-      <h1>Jesus did it again</h1>
+      <FolderList />
     </>
   )
 }
