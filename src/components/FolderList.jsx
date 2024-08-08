@@ -1,8 +1,10 @@
 import TreeData from './TreeData.js'
 import { FaFolderOpen } from "react-icons/fa";
 import './FolderList.css'
+import { useState } from 'react';
 
 function FolderList() {
+    const [open, setOpen] = useState(false)
     return (
         <div className="side vh-100 p-3" style={{ width: '250px' }}>
             <h2>Computer</h2>
@@ -10,11 +12,10 @@ function FolderList() {
                 TreeData.map((folders, index) => (
                     <ul key={index} className="nav flex-column">
                         <li className="nav-item">
-                            <a className="nav-link text-white" href="#">
+                            <a className="" href="#">
                                 <span>
                                     <FaFolderOpen />
-                                </span>
-                                <span className=''>{folders.label}</span>
+                                </span> {folders.label}
                             </a>
                         </li>
                     </ul>
