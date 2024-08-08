@@ -7,7 +7,7 @@ function FolderNode({ item, level = 0 }) {
 
   return (
     <ul className="nav flex-column">
-      <li className={`nav-item`} style={{paddingLeft: `${level * 20}px`}}>
+      <li onClick={() => setOpen(!open)} className={`nav-item`} style={{paddingLeft: `${level * 20}px`}}>
         <a className="" href="#">
           <span>{childrenPresent && <span>{open ? "+" : "-"}</span>}</span>
           <span>
