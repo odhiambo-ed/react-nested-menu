@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { FaFolderOpen } from "react-icons/fa";
+import './FolderNode.css'
 
 function FolderNode({ item, level = 0 }) {
   const [open, setOpen] = useState(false)
@@ -9,7 +10,7 @@ function FolderNode({ item, level = 0 }) {
     <ul className="nav flex-column">
       <li onClick={() => setOpen(!open)} className={`nav-item`} style={{paddingLeft: `${level * 20}px`}}>
         <a className="" href="#">
-          <span>{childrenPresent && <span>{open ? "+" : "-"}</span>}</span>
+          <span>{childrenPresent && <span>{open ? "-" : "+"}</span>}</span>
           <span>
             <FaFolderOpen />
           </span>{" "}
