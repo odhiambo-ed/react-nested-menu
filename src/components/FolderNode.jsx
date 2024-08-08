@@ -19,7 +19,15 @@ function FolderNode({ item, level = 0 }) {
           </span>{" "}
           {item.label}
           {
-            
+            childrenPresent && (
+              <div className={`${open ? 'show' : 'hide'}`}>
+                {
+                  item.children.map((child, index) => (
+                    <FolderNode key={index} item={child} level={level + 1} />
+                  ))
+                }
+              </div>
+            )
           }
         </a>
       </li>
