@@ -1,4 +1,4 @@
-const treeData = [
+const TreeData = [
     {
         label: 'This PC',
         children: [
@@ -56,4 +56,4 @@ const treeData = [
     }
 ];
 
-export default treeData;
+export default TreeData;
